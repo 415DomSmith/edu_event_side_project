@@ -1,0 +1,15 @@
+<h1>EVENTS INDEX</h1>
+
+<div class="events-list-toggle-outer">
+	<div class="events-list-toggle-inner">
+		<% @events.each do |event| %>
+			<div>
+				<h4><%= link_to "#{event.title}", event_path(event) %></h4>
+				<div><h6>Date: </h6><p><%= event.start_date %></p></div>
+				<div><h6>Time: </h6><p><%= event.start_time %></p></div>
+				<div><h6>City: </h6><p><%= event.city %></p></div>
+			</div>	
+		<% end %>
+
+	</div>
+</div>

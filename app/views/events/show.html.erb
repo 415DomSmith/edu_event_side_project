@@ -1,0 +1,34 @@
+<h1>INDIVIDUAL EVENT SHOW PAGE</h1>
+<h2><%= @event.title %></h2>
+<%= image_tag @event.image_url %>
+
+<div><h4>Start Date:</h4><p><%= @event.start_date %></p></div>
+<div><h4>End Date:</h4><p><%= @event.end_date %></p></div>
+<div><h4>Start Time:</h4><p><%= @event.start_time %></p></div>
+<div><h4>End Time:</h4><p><%= @event.end_time %></p></div>
+<div><h4>Address:</h4><p><%= @event.address %></p></div>
+<div><h4>City:</h4><p><%= @event.city %></p></div>
+<div><h4>Cost:</h4><p><%= @event.cost %></p></div>
+
+<% @event.tags.each do |tag| %>
+	<div><%= tag.name %></div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
